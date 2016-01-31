@@ -1,0 +1,45 @@
+@import "../globals";
+
+//
+// UI Pattern
+// ---------------------
+// https://www.youtube.com/watch?v=ko0jgfRuxJM
+// Panels extend to the edges of screen
+// Content however still has fixed width in the center
+// Using Height Property Is Toxic
+//
+// CSS Pattern
+// ---------------------
+// SideBySide Strategy: Inline Block
+//
+// CSS Tricks
+// ---------------------
+// overflow: hidden
+//
+
+.tab {
+  display: inline-block;
+  padding: 0.5em 2em;
+  border: 1px solid $grey-border;
+  margin: 0.5em 0;
+  text-decoration: none;
+  text-align: center;
+  background-color: $grey;
+}
+
+.panelContainer {
+  background-color: $white;
+  padding: 0 2em;
+}
+
+.panelContent {
+  * + * {
+    margin-left: $standard-gutter;
+  }
+  margin-left: -2em;
+  width: $panel-content-width;
+  font-family: $legible-font;
+  color: $legible-font-color;
+  margin: 0 auto;
+  overflow: hidden;
+}

@@ -1,0 +1,54 @@
+@import "../globals";
+
+//
+// UI Pattern
+// ---------------------
+// https://www.youtube.com/watch?v=ko0jgfRuxJM
+// Panels extend to the edges of screen
+// Content however still has fixed width in the center
+// Using Height Property Is Toxic
+//
+// CSS Pattern
+// ---------------------
+// Double Container Pattern
+// SidebySide Float (vs Flex)
+// Grids
+//
+// CSS Tricks
+// ---------------------
+// Labotomized Owl
+// Calc Gutter Widths
+// Float Clearing via overflow hidden
+//
+
+$sidebarWidth: 100% * 3/12;
+$bodyWidth: 100% * 9/12;
+
+.sidebar {
+  float: left;
+  width: calc(#{$sidebarWidth} - #{$standard-gutter});
+}
+
+.body {
+  float: left;
+  width: calc(#{$bodyWidth} - #{$standard-gutter});
+}
+
+.panelContainer {
+  padding: 0 2em;
+  background-color: $grey;
+  border-top: 1px solid $grey-border;
+  height: 800px;
+}
+
+.panelContent {
+  * + * {
+    margin-left: $standard-gutter;
+  }
+  //margin: 0 - $standard-gutter;
+  width: $panel-content-width;
+  font-family: $legible-font;
+  color: $legible-font-color;
+  margin: 0 auto;
+  overflow: hidden;
+}
