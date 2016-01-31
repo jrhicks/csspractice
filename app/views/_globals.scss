@@ -20,9 +20,9 @@
 // of the same hue.
 // As long as you stay in the same hue, this is only
 // using one color
-$prime-color: hsl(206,52,47);
-$prime-color-dark: hsl(206,52,12);
-$prime-color-light: hsl(206,100,65);
+$primary-color: hsl(206,52,47);
+$primary-color-dark: hsl(206,52,12);
+$primary-color-light: hsl(206,100,65);
 
 $grey: whitesmoke;
 $grey-border: lightgray;
@@ -32,7 +32,7 @@ $white: white;
 $legible-font: Roboto;
 $legible-font-color: #dimgray;
 $title-font: Roboto;
-$title-font-color: $prime-color-dark;
+$title-font-color: $primary-color-dark;
 
 // Sizing
 $panel-content-width: 1200px;

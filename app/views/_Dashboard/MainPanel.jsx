@@ -14,10 +14,16 @@ class MainPanel extends React.Component {
       <div className={styles.panelContainer}>
         <div className={styles.panelContent}>
           <div className={styles.sidebar}>
-            Sidebar
+            <img className={styles.profile}
+              src="http://lorempixel.com/200/250/business/"
+            />
+          <h1>Jeffrey Hicks</h1>
+          <p>@jrhicks</p>
           </div>
           <div className={styles.body}>
-            Body
+            <div className={styles.tile}>
+              Tile
+            </div>
           </div>
         </div>
       </div>
