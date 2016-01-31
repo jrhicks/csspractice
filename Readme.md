@@ -13,7 +13,7 @@ In particular I'm playing around with
 
 * Semantic Style
 
-Playing With Me
+Practice With Me
 =======
 
 * git clone git@github.com:jrhicks/csspractice.git
