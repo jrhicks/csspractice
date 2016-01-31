@@ -1,0 +1,34 @@
+// http://www.groovesharky.com/CSS-Frameworks(EuhDIRzUJgc)
+//
+// UI Patterns
+// -----------------
+// Component Collection Options
+// * Tiles
+// * Masanry
+// * Media Objects
+//
+// CSS Patterns
+// -----------------
+// Component Collections
+// Minute 30: https://www.youtube.com/watch?v=ofSnkJ9tPPM
+//
+// CSS Tricks
+// -----------------
+// Float, Negative Margins
+
+$tileWidth: 100%/3;
+
+.component {
+}
+
+.grid {
+  overflow: hidden;
+  margin: -3px;
+}
+
+.tile {
+  float: left;
+  margin: 3px;
+  width: calc(33% - 6px);
+  border-radius: 5px;
+}

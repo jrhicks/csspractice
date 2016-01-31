@@ -27,25 +27,9 @@ $bodyWidth: 100% * 9/12;
 .sidebar {
   float: left;
   width: calc(#{$sidebarWidth} - #{$standard-gutter});
-  .profile {
-    width: 200px;
-    border: 3px solid white;
-    border-radius: 10px;
-    margin-top: -150px;
-    z-index: 100;
-  }
-  h1 {
-    padding-left: 0;
-    margin-left: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    color: $primary-color-dark;
-  }
-  p {
-    padding: 0;
-    margin: 0;
-    color: $legible-font-color;
-    font-size: 1em;
+
+  > * + * {
+    margin-top: 1em;
   }
 }
 
@@ -60,6 +44,7 @@ $bodyWidth: 100% * 9/12;
   border: 1px solid $grey-border;
   border-radius: 5px;
 }
+
 .panelContainer {
   padding: 0 2em;
   padding-top: 0.5em;
@@ -69,10 +54,10 @@ $bodyWidth: 100% * 9/12;
 }
 
 .panelContent {
-  * + * {
+  > * + * {
     margin-left: $standard-gutter;
   }
-  //margin: 0 - $standard-gutter;
+
   width: $panel-content-width;
   font-family: $legible-font;
   color: $legible-font-color;
