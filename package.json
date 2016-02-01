@@ -6,6 +6,7 @@
     "build": "webpack -d",
     "lint": "eslint 'src/**/*.@(js|jsx)'",
     "start": "webpack-dev-server --devtool source-map --inline --progress --colors --content-base build",
+    "browserstack": "node browserstack_tunnel.js",
     "validate": "npm ls"
   },
   "keywords": [],
@@ -30,6 +31,7 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
+    "browserstacktunnel-wrapper": "^1.4.2",
     "css-loader": "^0.23.1",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^3.1.0",
