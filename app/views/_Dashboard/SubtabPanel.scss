@@ -24,14 +24,25 @@
 $sidebarWidth: 100% * 3/12;
 $bodyWidth: 100% * 9/12;
 
+.tabCollection {
+  > * {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  > * + * {
+    margin-left: 0.5em;
+  }
+}
+
 .tab {
   display: inline-block;
   padding: 0.5em 2em;
-  border: 1px solid $grey-border;
-  margin: 0.5em 0;
+  border-bottom: 1px solid $primary-color-dark;
+  color: $primary-color-dark;
+  font-weight: bold;
   text-decoration: none;
   text-align: center;
-  background-color: $grey;
 }
 
 .sidebar {
@@ -49,7 +60,7 @@ $bodyWidth: 100% * 9/12;
 }
 
 .panelContent {
-  * + * {
+  > * + * {
     margin-left: $standard-gutter;
   }
   width: $panel-content-width;

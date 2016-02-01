@@ -22,11 +22,21 @@
 //
 
 $sidebarWidth: 100% * 3/12;
-$bodyWidth: 100% * 9/12;
+$bodyWidth: 100% * 6/12;
+$col3Width: 100% * 3/12;
 
 .sidebar {
   float: left;
   width: calc(#{$sidebarWidth} - #{$standard-gutter});
+
+  > * + * {
+    margin-top: 1em;
+  }
+}
+
+.col3 {
+  float: left;
+  width: calc(#{$col3Width} - #{$standard-gutter});
 
   > * + * {
     margin-top: 1em;
@@ -40,9 +50,15 @@ $bodyWidth: 100% * 9/12;
 
 .tile {
   background-color: $white;
-  height: 900px;
   border: 1px solid $grey-border;
   border-radius: 5px;
+  padding: 1em;
+}
+
+.tweetCollection {
+  > * + * {
+    margin-top: 1em;
+  }
 }
 
 .panelContainer {

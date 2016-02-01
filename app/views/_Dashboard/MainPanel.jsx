@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
+import loremIpsum from 'lorem-ipsum';
 import styles from './MainPanel.scss'
 import PhotoAndVideoTileGrid from './PhotoAndVideoTileGrid';
+import Tweet from './Tweet';
 
 class MainPanel extends React.Component {
 
@@ -16,14 +18,34 @@ class MainPanel extends React.Component {
         <div className={styles.panelContent}>
 
           <div className={styles.sidebar}>
-            <img src="http://lorempixel.com/280/250/business/" style={{width: '100%', marginTop: '-140px'}} />
-            <p>Lorem Ipsum Dolar Sit Amut.  Lorem Ipsum Dolar Sit Amut.  Lorem Ipsum Dolar Sit Amut.  Lorem Ipsum Dolar Sit Amut.</p>
+            <img src="http://lorempixel.com/280/250/business/" style={{width: '100%', marginTop: '-150px'}} />
+            <p>{loremIpsum({count: 1, units: 'sentences'})}</p>
             <PhotoAndVideoTileGrid />
           </div>
 
           <div className={styles.body}>
             <div className={styles.tile}>
-              Tile
+              <div className={styles.tweetCollection}>
+                <Tweet />
+                <Tweet />
+                <Tweet />
+                <Tweet />
+                <Tweet />
+                <Tweet />
+                <Tweet />
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.col3}>
+            <div className={styles.tile}>
+              <div>{loremIpsum({ count: 1, units: 'sentences' })}</div>
+            </div>
+            <div className={styles.tile}>
+              <div>{loremIpsum({ count: 1, units: 'sentences' })}</div>
+            </div>
+            <div className={styles.tile}>
+              <div>{loremIpsum({ count: 1, units: 'sentences' })}</div>
             </div>
           </div>
 
