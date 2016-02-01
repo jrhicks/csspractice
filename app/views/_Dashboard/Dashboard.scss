@@ -1,6 +1,4 @@
-.root {
-  padding: 10px;
-  h1 {
-    color: blue;
-  }
+.panelCollection {
+  display: flex;
+  flex-direction: column;
 }

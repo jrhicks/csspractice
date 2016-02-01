@@ -35,11 +35,15 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!resolve-url!sass?outputStyle=expanded&sourceMap'),
+        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader!resolve-url!sass?outputStyle=expanded&sourceMap'),
         exclude: /node_modules/
       }
     ]
   },
+
+  postcss: [
+    require('autoprefixer-core')
+  ],
 
   plugins: [
     new ExtractTextPlugin('app.css', {

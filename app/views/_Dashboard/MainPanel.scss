@@ -4,7 +4,7 @@
 // UI Pattern
 // ---------------------
 // https://www.youtube.com/watch?v=ko0jgfRuxJM
-// Panels extend to the edges of screen
+// Panels extend to the edges (left & right) of screen
 // Content however still has fixed width in the center
 // Using Height Property Is Toxic
 //
@@ -66,7 +66,6 @@ $col3Width: 100% * 3/12;
   padding-top: 0.5em;
   background-color: $grey;
   border-top: 1px solid $grey-border;
-  height: 800px;
 }
 
 .panelContent {
