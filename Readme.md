@@ -7,11 +7,7 @@ In particular I'm playing around with
 
 * Zero Global Style
 
-* React CSS Modules
-
-* No CSS Framework (Foundations, Bootstrap, etc)
-
-* Semantic Style
+* Styling Components -vs- Using Components for Style
 
 Practice With Me
 =======
