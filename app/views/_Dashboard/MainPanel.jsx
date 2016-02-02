@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import loremIpsum from 'lorem-ipsum';
 import styles from './MainPanel.scss'
+import ProfileLink from './ProfileLink';
 import PhotoAndVideoTileGrid from './PhotoAndVideoTileGrid';
 import Tweet from './Tweet';
 
@@ -20,11 +21,21 @@ class MainPanel extends React.Component {
           <div className={styles.sidebar}>
             <img src="http://lorempixel.com/280/250/business/" style={{width: '100%', marginTop: '-150px'}} />
             <p>{loremIpsum({count: 1, units: 'sentences'})}</p>
+
+            <div className={styles.profileLinkCollection}>
+              <ProfileLink />
+              <ProfileLink />
+              <ProfileLink />
+              <ProfileLink />
+              <ProfileLink />
+            </div>
+
             <PhotoAndVideoTileGrid />
           </div>
 
           <div className={styles.body}>
             <div className={styles.tile}>
+
               <div className={styles.tweetCollection}>
                 <Tweet />
                 <Tweet />

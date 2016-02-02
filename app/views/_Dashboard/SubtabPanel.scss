@@ -21,8 +21,8 @@
 // Float Clearing via overflow hidden
 //
 
-$sidebarWidth: 100% * 3/12;
-$bodyWidth: 100% * 9/12;
+$sidebarWidth: $panel-content-width * 3/12 - $standard-gutter;
+$bodyWidth: $panel-content-width * 9/12 - $standard-gutter;
 
 .tabCollection {
   > * {
@@ -47,12 +47,12 @@ $bodyWidth: 100% * 9/12;
 
 .sidebar {
   float: left;
-  width: calc(#{$sidebarWidth} - #{$standard-gutter});
+  width: $sidebarWidth;
 }
 
 .body {
   float: left;
-  width: calc(#{$bodyWidth} - #{$standard-gutter});
+  width: $bodyWidth;
 }
 
 .panelContainer {

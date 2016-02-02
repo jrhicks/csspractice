@@ -21,13 +21,13 @@
 // Float Clearing via overflow hidden
 //
 
-$sidebarWidth: 100% * 3/12;
-$bodyWidth: 100% * 6/12;
-$col3Width: 100% * 3/12;
+$sidebarWidth: $panel-content-width * 3/12 - $standard-gutter;
+$bodyWidth: $panel-content-width * 6/12 - $standard-gutter;
+$col3Width: $panel-content-width * 3/12 - $standard-gutter;
 
 .sidebar {
   float: left;
-  width: calc(#{$sidebarWidth} - #{$standard-gutter});
+  width: $sidebarWidth;
 
   > * + * {
     margin-top: 1em;
@@ -36,7 +36,7 @@ $col3Width: 100% * 3/12;
 
 .col3 {
   float: left;
-  width: calc(#{$col3Width} - #{$standard-gutter});
+  width: $col3Width;
 
   > * + * {
     margin-top: 1em;
@@ -45,7 +45,7 @@ $col3Width: 100% * 3/12;
 
 .body {
   float: left;
-  width: calc(#{$bodyWidth} - #{$standard-gutter});
+  width: $bodyWidth;
 }
 
 .tile {
@@ -53,6 +53,12 @@ $col3Width: 100% * 3/12;
   border: 1px solid $grey-border;
   border-radius: 5px;
   padding: 1em;
+}
+
+.profileLinkCollection {
+  > * + * {
+    margin-top: 3px;
+  }
 }
 
 .tweetCollection {
