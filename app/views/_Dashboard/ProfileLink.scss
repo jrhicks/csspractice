@@ -1,42 +1,26 @@
-$media_padding: 10px;
+@import "../globals";
+$media_padding: 5px;
 
 .flag {
     display: table;
     width: 100%;
+    font-family: $legible-font;
+    color: $legible-font-color;
 
     .image, .body {
       display: table-cell;
       vertical-align: middle;
-
-      .top & {
-          vertical-align: top;
-      }
-
-      .bottom & {
-          vertical-align: bottom;
-      }
     }
 
     .image {
         padding-right: $media_padding;
-
-        > img {
-            display: block;
-            max-width: none;
+        > * {
+          display: block;
+          max-width: none;
         }
-
-        .rev & {
-            padding-right: 0;
-            padding-left: $media_padding;
-        }
-
     }
 
     .body {
       width: 100%;
-      p {
-        margin: 0;
-        padding: 0;
-      }
     }
 }

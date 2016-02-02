@@ -57,7 +57,7 @@ $col3Width: $panel-content-width * 3/12 - $standard-gutter;
 
 .profileLinkCollection {
   > * + * {
-    margin-top: 3px;
+    margin-top: 0px;
   }
 }
 
