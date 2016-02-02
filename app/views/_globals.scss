@@ -35,5 +35,6 @@ $title-font: Roboto;
 $title-font-color: $primary-color-dark;
 
 // Sizing
-$panel-content-width: 1200px;
+$panel-container-padding: 16px;
+$panel-content-width: 1200px - ($panel-container-padding*2);
 $standard-gutter: 16px;

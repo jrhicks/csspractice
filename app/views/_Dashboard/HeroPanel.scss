@@ -23,7 +23,7 @@
                     url("http://placemi.com/1200x400");
   background-size: cover;
   background-position:  center center;
-  padding: 0 2em;
+  padding: 0 $panel-container-padding;
   border: 1px solid black;
 }
 

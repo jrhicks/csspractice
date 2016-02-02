@@ -16,7 +16,7 @@
   background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.95) 100%), url("http://placemi.com/1200x400");
   background-size: cover;
   background-position: center center;
-  padding: 0 2em;
+  padding: 0 $panel-container-padding;
   border: 1px solid black;
 }
 
@@ -55,7 +55,7 @@
 
 .TabPanel__panelContainer___3chuA {
   background-color: white;
-  padding: 0 2em;
+  padding: 0 $panel-container-padding;
 }
 
 .TabPanel__tabCollection___mqMYr > * + * {
@@ -110,7 +110,7 @@
 }
 
 .MainPanel__panelContainer___3R2jF {
-  padding: 0 2em;
+  padding: 0 $panel-container-padding;
   padding-top: 0.5em;
   background-color: whitesmoke;
   border-top: 1px solid lightgray;
@@ -206,7 +206,7 @@
 }
 
 .SubtabPanel__panelContainer___21NnY {
-  padding: 0 2em;
+  padding: 0 $panel-container-padding;
 }
 
 .SubtabPanel__panelContent___3gl_E {

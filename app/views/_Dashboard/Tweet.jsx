@@ -9,16 +9,19 @@ class Tweet extends React.Component {
 
     return (
       <div className={styles.media}>
-        <img className={styles.figure} src={randomUrl} alt="" />
-        <div className={styles.body}>
-          <div className={styles.title}>
-            Media Object Title
+          <a href="#" className={styles.img}>
+            <img src={randomUrl} alt="" />
+          </a>
+          <div className={styles.bd}>
+            <div className={styles.heading}>
+              {loremIpsum({ count: 1, units: 'sentences' })}
+            </div>
+            <div className={styles.description}>
+              {loremIpsum({ count: 4, units: 'sentences' })}
+            </div>
           </div>
-          <div className={styles.description}>
-            {loremIpsum({ count: 3, units: 'sentences' })}
-          </div>
-        </div>
       </div>
+
     );
   }
 }

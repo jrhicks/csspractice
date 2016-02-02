@@ -56,7 +56,7 @@ $bodyWidth: $panel-content-width * 9/12 - $standard-gutter;
 }
 
 .panelContainer {
-  padding: 0 2em;
+  padding: 0 $panel-container-padding;
 }
 
 .panelContent {

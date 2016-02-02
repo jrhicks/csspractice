@@ -68,7 +68,7 @@ $col3Width: $panel-content-width * 3/12 - $standard-gutter;
 }
 
 .panelContainer {
-  padding: 0 2em;
+  padding: 0 $panel-container-padding;
   padding-top: 0.5em;
   background-color: $grey;
   border-top: 1px solid $grey-border;
