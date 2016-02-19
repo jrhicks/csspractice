@@ -1,0 +1,87 @@
+@import "../globals";
+
+//
+// UI Pattern
+// ---------------------
+// https://www.youtube.com/watch?v=ko0jgfRuxJM
+// Panels extend to the edges (left & right) of screen
+// Content however still has fixed width in the center
+// Using Height Property Is Toxic
+//
+// CSS Pattern
+// ---------------------
+// Double Container Pattern
+// SidebySide Float (vs Flex)
+// Grids
+//
+// CSS Tricks
+// ---------------------
+// Labotomized Owl
+// Calc Gutter Widths
+// Float Clearing via overflow hidden
+//
+
+$sidebarWidth: $panel-content-width * 3/12 - $standard-gutter;
+$bodyWidth: $panel-content-width * 6/12 - $standard-gutter;
+$col3Width: $panel-content-width * 3/12 - $standard-gutter;
+
+.sidebar {
+  float: left;
+  width: $sidebarWidth;
+
+  > * + * {
+    margin-top: 1em;
+  }
+}
+
+.col3 {
+  float: left;
+  width: $col3Width;
+
+  > * + * {
+    margin-top: 1em;
+  }
+}
+
+.body {
+  float: left;
+  width: $bodyWidth;
+}
+
+.tile {
+  background-color: $white;
+  border: 1px solid $grey-border;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.profileLinkCollection {
+  > * + * {
+    margin-top: 0px;
+  }
+}
+
+.tweetCollection {
+  > * + * {
+    margin-top: 1em;
+  }
+}
+
+.panelContainer {
+  padding: 0 $panel-container-padding;
+  padding-top: 0.5em;
+  background-color: $grey;
+  border-top: 1px solid $grey-border;
+  flex: 1;
+}
+
+.panelContent {
+  > * + * {
+    margin-left: $standard-gutter;
+  }
+
+  width: $panel-content-width;
+  font-family: $legible-font;
+  color: $legible-font-color;
+  margin: 0 auto;
+}

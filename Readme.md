@@ -33,31 +33,9 @@ I guess I'm doing more than just practicing.  I'm also dreaming up the target co
 
 * npm install
 
-* cd app/views
+* cd app/views/_Dashboard
 
-* rpt g LayoutPanel:nav MainNav 11:tabs 1
-
-* rpt g LayoutPanel:hero Hero 12:tta
-
-* rpt g LayoutPanel:nav SubNav 3 9:tabs
-
-* rpt g LayoutPanel:body Body 3:masanry 6:masanry 3:masanry
-
-* rpt g TiledMedia RecentPictures 33%
-
-* rpt g TiledCards Developers 3x4
-
-* rpt g MasonryCards Tweets
-
-* rpt g Card Developer
-
-* rpt g MediaObject Person
-
-* rpt g MediaObject:flag Person
-
-* rpt g FlexBoxWrappable XYZ
-
-* rpt g ReflowingHeading ABC
+* rpt g HeroPanel Main
 
 Inspired By
 =======

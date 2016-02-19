@@ -1,0 +1,35 @@
+@import "../globals";
+
+//
+// UI Pattern
+// ------------
+// Media Object - @stubbornella
+// https://philipwalton.github.io/solved-by-flexbox/demos/media-object/
+//
+
+.media {
+  font-family: $legible-font;
+  color: $legible-font-color;
+  display: flex;
+  align-items: flex-start;
+}
+
+.figure {
+  margin-right: 1em;
+}
+
+.body {
+  flex: 1;
+  > * + * {
+      margin-top: 1em;
+  }
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.description {
+
+}

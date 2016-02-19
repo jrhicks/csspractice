@@ -1,0 +1,71 @@
+@import "../globals";
+
+//
+// UI Pattern
+// ---------------------
+// https://www.youtube.com/watch?v=ko0jgfRuxJM
+// Panels extend to the edges of screen
+// Content however still has fixed width in the center
+// Using Height Property Is Toxic
+//
+// CSS Pattern
+// ---------------------
+// Double Container Pattern
+// SidebySide Float (vs Flex)
+// Grids
+//
+// CSS Tricks
+// ---------------------
+// Labotomized Owl
+// Calc Gutter Widths
+// Float Clearing via overflow hidden
+//
+
+$sidebarWidth: $panel-content-width * 3/12 - $standard-gutter;
+$bodyWidth: $panel-content-width * 9/12 - $standard-gutter;
+
+.tabCollection {
+  > * {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  > * + * {
+    margin-left: 0.5em;
+  }
+}
+
+.tab {
+  display: inline-block;
+  padding: 0.5em 2em;
+  border-bottom: 1px solid $legible-font-color;
+  color: $legible-font-color;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sidebar {
+  float: left;
+  width: $sidebarWidth;
+}
+
+.body {
+  float: left;
+  width: $bodyWidth;
+}
+
+.panelContainer {
+  padding: 0 $panel-container-padding;
+}
+
+.panelContent {
+  > * + * {
+    margin-left: $standard-gutter;
+  }
+  width: $panel-content-width;
+  font-family: $legible-font;
+  color: $legible-font-color;
+  margin: 0 auto;
+  overflow: hidden;
+}

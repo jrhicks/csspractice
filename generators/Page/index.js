@@ -13,6 +13,7 @@ class HeroPanelGenerator {
     const gen = this.gen;
     const jsFname = `${this.componentName()}.jsx`
     const cssFname = `${this.componentName()}.scss`
+    console.log(args);
 
     switch (this.command) {
       default:
@@ -22,7 +23,7 @@ class HeroPanelGenerator {
   }
 
   componentName() {
-    return this.camelizeName();
+    return `${this.camelizeName()}Page`;
   }
 
   inspect(v) {

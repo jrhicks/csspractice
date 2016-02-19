@@ -11,18 +11,14 @@ class HeroPanelGenerator {
 
   run() {
     const gen = this.gen;
-    const jsFname = `${this.componentName()}.jsx`
-    const cssFname = `${this.componentName()}.scss`
+    const jsFname = `${this.camelizeName()}Hero.jsx`
+    const cssFname = `${this.camelizeName()}Hero.scss`
 
     switch (this.command) {
       default:
-        gen.template('Component.jsx', path.join(process.cwd(), jsFname));
-        gen.template('Style.scss', path.join(process.cwd(), cssFname));
+        gen.template('HeroPanel.jsx', path.join(process.cwd(), jsFname));
+        gen.template('HeroPanel.scss', path.join(process.cwd(), cssFname));
     }
-  }
-
-  componentName() {
-    return this.camelizeName();
   }
 
   inspect(v) {

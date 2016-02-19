@@ -1,0 +1,26 @@
+@import "../globals";
+$media_padding: 5px;
+
+.flag {
+    display: table;
+    width: 100%;
+    font-family: $legible-font;
+    color: $legible-font-color;
+
+    .image, .body {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .image {
+        padding-right: $media_padding;
+        > * {
+          display: block;
+          max-width: none;
+        }
+    }
+
+    .body {
+      width: 100%;
+    }
+}

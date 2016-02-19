@@ -1,6 +1,7 @@
 module.exports = {
   component: 'div',
   childRoutes: [
-    require('./views/_Dashboard')
+    require('./views/_HomePage'),
+    require('./views/_OtherPage')
   ]
 };
